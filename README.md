@@ -4,8 +4,8 @@ The [AVA dataset](https://research.google.com/ava/) contains 192 videos split in
 
 Each row contains an annotation for one person performing an action in an interval, where that annotation is associated with the middle frame. Different persons and multiple action labels are described in separate rows.
 
-#### File:
-##### ./ava_train_v1.0.csv & ./ava_test_v1.0.csv
+### File:
+##### .ava_train_v1.0.csv & .ava_test_v1.0.csv
 The csv files are the label set included eight keys:
 - video_id: YouTube identifier
 - middle_frame_timestamp: in seconds from the start of the YouTube.
@@ -13,7 +13,7 @@ The csv files are the label set included eight keys:
 - action_id: identifier of an action class, see ava_action_list_v1.0.pbtxt
 - status: the video is availabe
 
-##### ./ava_action_list_v1.0.pbtxt
+#### .ava_action_list_v1.0.pbtxt
 example:
 ```
 label{
@@ -24,11 +24,11 @@ label{
     name: "crouch/kneel"label_id: 3label_type: PERSON_MOVEMENT
 }
 ```
-#### Download
+### Download
 
 Waiting for upload.
 
-#### Not available video list
+### Not available video list
 
 train set:
 
@@ -57,7 +57,7 @@ test set:
 | XIx-C22Ewk4 |
 | bnW1PXGt5hw |
 
-#### Changed label
+### Changed label
 
 Some original video_id shows the problem in the csv file, where we changed label name, it is not affect to use data set. If you want get original YouTube identifier, remove the prefix 'issue'.
 
